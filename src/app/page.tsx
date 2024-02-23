@@ -1,9 +1,13 @@
 import { CiInstagram, CiLinkedin, CiTwitter } from "react-icons/ci";
 import HeroSection from "../component/hero/page";
-import img from "../assets/aboutus.png"
 import Navbar from "../component/navbar/page";
 import Button from "@/component/button/page";
 import Image from 'next/image'
+import img from '@/assets/aboutus.png'
+import projectimg1 from '@/assets/project1.webp'
+import projectimg2 from '@/assets/project2.webp'
+import projectimg3 from '@/assets/project3.webp'
+import projectimg4 from '@/assets/project4.webp'
 import Footer from "@/component/footer/page";
 import ProjectCard from "@/component/project_card";
 
@@ -14,14 +18,14 @@ export default function Home()
             <Navbar/>
             <div>
                 <div className="container mx-auto py-12">
-                    <HeroSection>"Crafting Digital Experiences with <span className="text-slate-400">Passion and Precision</span></HeroSection>
+                <HeroSection sub="How I Combine design and technology to create exceptional user experiences." header="Services" CTA=""/>
                     <section className="text-center h-screen ">
                         <div className="mr-4 ml-4 mb-20 flex items-center justify-between">
                             <h2 className="text-base">About us</h2>
                             <ul className="flex space-x-4">
-                                <li><CiLinkedin /></li>
-                                <li><CiTwitter /></li>
-                                <li><CiInstagram /></li>
+                                <li className="border rounded-full p-1"><CiLinkedin /></li>
+                                <li className="border rounded-full p-1"><CiTwitter /></li>
+                                <li className="border rounded-full p-1"><CiInstagram /></li>
                             </ul>
                         </div>
                         <div className="flex ">
@@ -34,24 +38,21 @@ export default function Home()
                             </div>
                         </div>
                         <table className="w-full mt-10 mb-10">
-                            <tr>
+                        <thead>
                                 <th className="w-1/3 p-4 border"><span className="font-mono">Partners</span></th>
                                 <th className="w-1/3 p-4 border"><span className="font-mono">Partners</span></th>
                                 <th className="w-1/3 p-4 border"><span className="font-mono">Partners</span></th>
-                            </tr>
+                            </thead>
                         </table>
-
                     </section>
-                    <section className="text-center mb-12">
                     <section className="text-center mb-12">
                         <h2 className="text-3xl font-semibold mb-6">Explore Our Work</h2>
                         <div className="grid grid-cols-2 gap-8">
-                            <ProjectCard/>
-                            <ProjectCard/>
-                            <ProjectCard/>
-                            <ProjectCard/>
+                            <ProjectCard imageUrl={projectimg1} title="first project"/>
+                            <ProjectCard imageUrl={projectimg2} title=""/>
+                            <ProjectCard imageUrl={projectimg3} title=""/>
+                            <ProjectCard imageUrl={projectimg4} title=""/>
                         </div>
-        </section>
                     </section>
                     <section className="text-center mb-12">
                         <h2 className="text-3xl font-semibold mb-6">Testimonials</h2>
@@ -68,17 +69,7 @@ export default function Home()
                             </div>
                         </div>
                     </section>
-                    <section className="text-center mb-12">
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                            <div className="col-span-1 md:col-span-1">
-                                <h2 className="text-6xl font-bold mb-4">Let's Work-Together</h2>
-                            </div>
-                            <div className="col-span-1 md:col-span-1 flex flex-col items-center justify-center">
-                                <button className="bg-black text-white border border-white py-2 px-4 rounded-lg mb-4 hover:bg-gray-800 hover:border-gray-800 transition duration-300 w-60">Contact Me</button>
-                                <button className="bg-white text-black py-2 px-4 rounded-lg hover:bg-gray-200 transition duration-300 w-60">Visit My LinkedIn</button>
-                            </div>
-                        </div>
-                    </section>
+                    
                 </div>
             </div>
         <Footer/>
