@@ -1,11 +1,12 @@
 import Link from "next/link";
 import { FaHandPointDown } from "react-icons/fa6";
 import Button from "../button/page";
+import { ReactNode } from "react";
 
 interface heroProps {
-  header: String;
-  sub: string;
-  CTA:String;
+  header: ReactNode;
+  sub: ReactNode;
+  CTA:ReactNode;
 
 }
 

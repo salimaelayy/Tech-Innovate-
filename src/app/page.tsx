@@ -10,6 +10,7 @@ import projectimg3 from '@/assets/project3.webp'
 import projectimg4 from '@/assets/project4.webp'
 import Footer from "@/component/footer/page";
 import ProjectCard from "@/component/project_card";
+import PreFooter from "@/component/prefooter/page";
 
 export default function Home()
 {
@@ -18,7 +19,7 @@ export default function Home()
             <Navbar/>
             <div>
                 <div className="container mx-auto py-12">
-                <HeroSection sub="How I Combine design and technology to create exceptional user experiences." header="Services" CTA=""/>
+                <HeroSection sub="" header={<>Designing with Purpose <span className="text-slate-400 ">Building with  Webflow.</span></>} CTA={<>say hi</>}/>
                     <section className="text-center h-screen ">
                         <div className="mr-4 ml-4 mb-20 flex items-center justify-between">
                             <h2 className="text-base">About us</h2>
@@ -72,6 +73,7 @@ export default function Home()
                     
                 </div>
             </div>
+            <PreFooter/>
         <Footer/>
         </div>
     </div>
