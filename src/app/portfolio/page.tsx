@@ -17,7 +17,7 @@ export default function Portfolio()
         <Navbar/>
         <div>
             <div className="container mx-auto py-12 ">
-                <HeroSection sub="" header={<>Show casing our <span className="text-slate-400 ">Talent and Passion</span></>} CTA=""/>
+                <HeroSection sub="" header={<>Show casing our <span className="text-slate-400 ">Talent and Passion</span></>} CTA={<>say hi</>}/>
                 <section className="text-center m-20">
                     <div className="grid grid-cols-2">
                     <h2 className="text-md  text-left font-semibold mb-6 text-slate-400">Selected Projects </h2>
