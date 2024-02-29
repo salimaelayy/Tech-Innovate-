@@ -14,7 +14,7 @@ const ProjectCard: React.FC<CardProps> = ({imageUrl,title}) => {
                 <div className="mb-4">
                     <span className="border border-white px-2 py-1 rounded-md mr-2">Web Design</span>
                     <span className="border border-white px-2 py-1 rounded-md mr-2">Development</span>
-                    <button className="border border-white  px-2 py-1 rounded-md mr-2">View Project</button>
+                    <button className="border border-white mt-2 px-2 py-1 rounded-md mr-2">View Project</button>
                 </div>
             </div>
     );

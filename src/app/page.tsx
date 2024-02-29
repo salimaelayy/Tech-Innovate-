@@ -12,15 +12,14 @@ import Footer from "@/component/footer/page";
 import ProjectCard from "@/component/project_card";
 import PreFooter from "@/component/prefooter/page";
 
-export default function Home()
-{
-    return <div className="bg-black max-w-screen-2xl"> 
-        <div className=" max-w-screen-lg mx-auto text-white">
-            <Navbar/>
-            <div>
-                <div className="container mx-auto py-12">
-                <HeroSection sub="" header={<>Designing with Purpose <span className="text-slate-400 ">Building with  Webflow.</span></>} CTA={<>say hi</>}/>
-                    <section className="text-center h-screen ">
+export default function Home() {
+    return (
+        <div className="bg-black">
+            <div className="container mx-auto  text-white">
+                <Navbar />
+                <div>
+                    <HeroSection sub="" OC="" header={<>Designing with Purpose <span className="text-slate-400 ">Building with  Webflow.</span></>} CTA={<>say hi</>} />
+                    <section className="text-center">
                         <div className="mr-4 ml-4 mb-20 flex items-center justify-between">
                             <h2 className="text-base">About us</h2>
                             <ul className="flex space-x-4">
@@ -29,7 +28,7 @@ export default function Home()
                                 <li className="border rounded-full p-1"><CiInstagram /></li>
                             </ul>
                         </div>
-                        <div className="flex ">
+                        <div className="flex">
                             <div className="w-1/2 text-left text-lg mr-4">
                                 <p>At [Your Name], we believe in the power of creativity to transform ideas into reality. With a blend of innovation and expertise, we strive to deliver exceptional digital solutions that captivate and inspire</p>
                                 <p className="mt-20">At [Your Name], we believe in  creativity to transform ideas into reality. of innovation and expertise, we strive to deliver exceptional digital solutions that captivate and inspire</p>
@@ -39,20 +38,22 @@ export default function Home()
                             </div>
                         </div>
                         <table className="w-full mt-10 mb-10">
-                        <thead>
-                                <th className="w-1/3 p-4 border"><span className="font-mono">Partners</span></th>
-                                <th className="w-1/3 p-4 border"><span className="font-mono">Partners</span></th>
-                                <th className="w-1/3 p-4 border"><span className="font-mono">Partners</span></th>
+                            <thead>
+                                <tr>
+                                    <th className="w-1/3 p-4 border"><span className="font-mono">Partners</span></th>
+                                    <th className="w-1/3 p-4 border"><span className="font-mono">Partners</span></th>
+                                    <th className="w-1/3 p-4 border"><span className="font-mono">Partners</span></th>
+                                </tr>
                             </thead>
                         </table>
                     </section>
                     <section className="text-center mb-12">
                         <h2 className="text-3xl font-semibold mb-6">Explore Our Work</h2>
                         <div className="grid grid-cols-2 gap-8">
-                            <ProjectCard imageUrl={projectimg1} title="first project"/>
-                            <ProjectCard imageUrl={projectimg2} title=""/>
-                            <ProjectCard imageUrl={projectimg3} title=""/>
-                            <ProjectCard imageUrl={projectimg4} title=""/>
+                            <ProjectCard imageUrl={projectimg1} title="first project" />
+                            <ProjectCard imageUrl={projectimg2} title="" />
+                            <ProjectCard imageUrl={projectimg3} title="" />
+                            <ProjectCard imageUrl={projectimg4} title="" />
                         </div>
                     </section>
                     <section className="text-center mb-12">
@@ -61,7 +62,10 @@ export default function Home()
                             <div className="bg-black p-6 rounded-lg">
                                 <h3 className="text-lg font-semibold text-white mb-4">Client Video</h3>
                                 <div className="aspect-w-16 aspect-h-9 bg-gray-800 rounded-lg overflow-hidden">
-                                    {/* Embed your video here */}
+                                    <video width="640" height="360" controls>
+                                        <source src="sample_video.mp4" type="video/mp4" />
+                                        Your browser does not support the video tag.
+                                    </video>
                                 </div>
                             </div>
                             <div className="bg-black p-6  text-left rounded-lg">
@@ -70,11 +74,10 @@ export default function Home()
                             </div>
                         </div>
                     </section>
-                    
                 </div>
+                <PreFooter />
+                <Footer />
             </div>
-            <PreFooter/>
-        <Footer/>
         </div>
-    </div>
+    );
 }
