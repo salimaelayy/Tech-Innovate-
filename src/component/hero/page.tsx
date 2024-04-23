@@ -9,7 +9,6 @@ interface heroProps {
   sub: ReactNode;
   CTA:ReactNode;
   OC:string;
-
 }
 
 const HeroSection: React.FC<heroProps> = ({header,sub,CTA,OC}) => {
