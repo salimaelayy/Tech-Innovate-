@@ -1,4 +1,4 @@
-import { CiInstagram, CiLinkedin, CiTwitter } from "react-icons/ci";
+import { FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
 import HeroSection from "../component/hero/page";
 import Navbar from "../component/navbar/page";
 import Button from "@/component/button/page";
@@ -15,23 +15,23 @@ import PreFooter from "@/component/prefooter/page";
 export default function Home() {
     return (
         <div className="bg-black">
-            <div className="container mx-auto  text-white">
+            <div className="container mx-auto text-white">
                 <Navbar />
                 <div>
-                    <HeroSection sub="" OC="" header={<>Designing with Purpose <span className="text-slate-400 ">Building with  Webflow.</span></>} CTA={<>say hi</>} />
+                    <HeroSection sub="" OC="" header={<>Designing with Purpose <span className="text-slate-400">Building with Webflow.</span></>} CTA={<>say hi</>} />
                     <section className="text-center">
                         <div className="mr-4 ml-4 mb-20 flex items-center justify-between">
                             <h2 className="text-base">About us</h2>
                             <ul className="flex space-x-4">
-                                <li className="border rounded-full p-1"><CiLinkedin /></li>
-                                <li className="border rounded-full p-1"><CiTwitter /></li>
-                                <li className="border rounded-full p-1"><CiInstagram /></li>
+                                <li className="border rounded-full p-1"><FaLinkedin /></li>
+                                <li className="border rounded-full p-1"><FaTwitter /></li>
+                                <li className="border rounded-full p-1"><FaInstagram /></li>
                             </ul>
                         </div>
                         <div className="flex">
                             <div className="w-1/2 text-left text-lg mr-4">
                                 <p>At [Your Name], we believe in the power of creativity to transform ideas into reality. With a blend of innovation and expertise, we strive to deliver exceptional digital solutions that captivate and inspire</p>
-                                <p className="mt-20">At [Your Name], we believe in  creativity to transform ideas into reality. of innovation and expertise, we strive to deliver exceptional digital solutions that captivate and inspire</p>
+                                <p className="mt-20">At [Your Name], we believe in creativity to transform ideas into reality. of innovation and expertise, we strive to deliver exceptional digital solutions that captivate and inspire</p>
                             </div>
                             <div className="w-1/2">
                                 <Image src={img} alt="" />
@@ -51,9 +51,9 @@ export default function Home() {
                         <h2 className="text-3xl font-semibold mb-6">Explore Our Work</h2>
                         <div className="grid grid-cols-2 gap-8">
                             <ProjectCard imageUrl={projectimg1} title="first project" />
-                            <ProjectCard imageUrl={projectimg2} title="" />
-                            <ProjectCard imageUrl={projectimg3} title="" />
-                            <ProjectCard imageUrl={projectimg4} title="" />
+                            <ProjectCard imageUrl={projectimg2} title="second project" />
+                            <ProjectCard imageUrl={projectimg3} title="third project" />
+                            <ProjectCard imageUrl={projectimg4} title="fourth project" />
                         </div>
                     </section>
                     <section className="text-center mb-12">
@@ -68,7 +68,7 @@ export default function Home() {
                                     </video>
                                 </div>
                             </div>
-                            <div className="bg-black p-6  text-left rounded-lg">
+                            <div className="bg-black p-6 text-left rounded-lg">
                                 <blockquote className="text-white text-lg mb-4">"Working with [Your Name] was a pleasure. Their attention to detail and commitment to excellence truly set them apart."</blockquote>
                                 <p className="text-white">- John Doe</p>
                             </div>
