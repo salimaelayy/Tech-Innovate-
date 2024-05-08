@@ -3,6 +3,7 @@ import { FaHandPointDown } from "react-icons/fa6";
 import Button from "../button/page";
 import { ReactNode } from "react";
 import { Url } from "url";
+import Image from "next/image";
 
 interface heroProps {
   header: ReactNode;
@@ -56,7 +57,7 @@ const Hero: React.FC<heroProps> = ({header,sub,CTA,OC}) => {
         </div>
 
         <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
-          <img src="https://demo.themesberg.com/landwind/images/hero.png" alt="hero image" />
+          <Image src="https://demo.themesberg.com/landwind/images/hero.png" alt="hero image" />
         </div>
       </div>
     </section>
