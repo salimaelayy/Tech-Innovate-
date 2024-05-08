@@ -1,4 +1,4 @@
-"use client "
+"use client"
 import React, { useState } from 'react';
 
 const CForm: React.FC = () => {
@@ -26,20 +26,20 @@ const CForm: React.FC = () => {
         <form className="mt-8" onSubmit={handleSubmit}>
             <div className="grid grid-cols-1 gap-6 text-left">
                 <label htmlFor="name" className="block">
-                    <span className="text-white">Name</span>
-                    <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} className="mt-1 p-2 border-white border bg-black  text-black w-full rounded" required />
+                    <span className="text-background">Name</span>
+                    <input type="text" id="name" name="name" placeholder="john doe" value={formData.name} onChange={handleChange} className="mt-1 p-2 border-accent border-2 bg-transparent   text-background w-full rounded-md" required />
                 </label>
                 <label htmlFor="email" className="block">
-                    <span className=" text-white ">Email Address</span>
-                    <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} className="mt-1 p-2 border-white border bg-black  text-black w-full rounded" required />
+                    <span className=" text-background ">Email Address</span>
+                    <input type="email" id="email" name="email" placeholder="johndoe@email.com" value={formData.email} onChange={handleChange} className="mt-1 p-2 border-accent border-2 bg-transparent  text-background  w-full rounded-md" required />
                 </label>
                 <label htmlFor="message" className="block">
-                    <span className=" text-white">Message</span>
-                    <textarea id="message" name="message" value={formData.message} onChange={handleChange} className="mt-1 p-2 border-white border bg-black  text-black w-full rounded" rows={4} required />
+                    <span className=" text-background">Message</span>
+                    <textarea id="message" name="message" placeholder="How may i help you" value={formData.message} onChange={handleChange} className="mt-1 p-2 border-accent border-2 bg-transparent  text-background w-full rounded-md" rows={4} required />
                 </label>
             </div>
             <div className="mt-6">
-                <button type="submit" className="rounded-full focus:outline-none py-2 px-6 bg-black border border-white text-white">Submit</button>
+                <button type="submit" className="rounded-md focus:outline-none py-2 px-6 hover:bg-rose-500 bg-accent text-background">Submit</button>
             </div>
         </form>
     );
