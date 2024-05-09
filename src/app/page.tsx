@@ -21,7 +21,7 @@ export default function Home() {
             <div className="container  mx-auto text-white">
                 <Navbar />
                 <div>
-                    <HeroSection  secondHeading="Salam, I'm Salima 👋🏻" sub="I am skilled at developing intuitive user interfaces in that will suit your needs. I have a talent for transforming your vision into innovative and engaging digital realities." OC1="#projects" OC="#contact" header={<><span className="text-accent">FullStack </span>Developer</>}CTA1={<>Let's Work Toghether</>} CTA2={<>Browse Projects</>} />
+                    <HeroSection  secondHeading={<> Salam, I&apos;m Salima 👋🏻</>} sub={<> I am skilled at developing intuitive user interfaces in that will suit your needs. I have a talent for transforming your vision into innovative and engaging digital realities.</>} OC1="#projects" OC="#contact" header={<><span className="text-accent">FullStack </span>Developer</>}CTA1={<>Let&apos;s Work Toghether</>} CTA2={<>Browse Projects</>} />
                     {/* <section>  
                     <TechnologyTabs/>
                     </section> */}
@@ -47,7 +47,7 @@ export default function Home() {
                         </div>
                         <div className="flex">
                             <div className="w-1/2 text-left leading-9 tracking-widest text-base mr-4">
-                                <p>I'm <span className="font-medium">Salima El Ayyachi</span>, I specialize in the MERN stack to design dynamic web applications. I am skilled at creating robust APIs in the backend and developing intuitive user interfaces in the frontend. I have a talent for transforming your vision into innovative and engaging digital realities.</p>
+                                <p> I&apos;sm <span className="font-medium">Salima El Ayyachi</span>, I specialize in the MERN stack to design dynamic web applications. I am skilled at creating robust APIs in the backend and developing intuitive user interfaces in the frontend. I have a talent for transforming your vision into innovative and engaging digital realities.</p>
                                 <br/>
                                 <p>In a recent project, I led the development of <Link href="https://github.com/salimaelayy/TRACKIFY"><span className="font-mono font-bold text-lg">Trackify</span></Link>, a task management application using the MERN stack. I started by designing a scalable database schema with role-based access. After designing the application interface in Figma, I created robust APIs. I then implemented the user interfaces and connected the backend with the frontend. The result was Trackify, a visually engaging and high-performing application, demonstrating the success of the task at hand.</p>
                             </div>
@@ -75,8 +75,7 @@ export default function Home() {
                         <div className="grid grid-cols-2">
                             <div className="col-span-1">
                                 {/* <h3 className="font-bold mb-6">How to Contact Me</h3> */}
-                                <p className="text-lg text-left mb-10">Feel free to reach out to me through any of the following methods:</p>
-                               
+                                <p className="text-lg text-left mb-10">Feel free to reach out to us through any of the following methods:</p>
                                 <div className="flex flex-row space-x-4 my-10">
                                     <a className="border rounded-full border-accent text-accent p-1" href="https://www.linkedin.com/in/salima-el-ayyachi-fullstack-mern-developer/" target="_blank"><FaLinkedin /></a>
                                     <a className="border rounded-full border-accent text-accent p-1" href="https://github.com/salimaelayy" target="_blank"><FaGithub /></a>
